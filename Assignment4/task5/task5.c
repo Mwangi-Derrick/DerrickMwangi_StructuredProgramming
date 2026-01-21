@@ -19,12 +19,12 @@ int main() {
 
   // Bubble sort algorithm to sort in ascending order
   for (int i = 0; i < n - 1; i++) {
-    for (int j = 0; j < n - i - 1; j++) {
+    for (int j = 0; j < n - i - 1; j++) {//why n-i-1: because after each pass largest element is fixed at the end
       if (arr[j] > arr[j + 1]) {
         // Swap arr[j] and arr[j+1]
         int temp = arr[j];
-        arr[j] = arr[j + 1];
-        arr[j + 1] = temp;
+        arr[j] = arr[j + 1];// Swap present element with next element
+        arr[j + 1] = temp;// swap next element with present element
       }
     }
   }
